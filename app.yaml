@@ -11,6 +11,7 @@ spec:
         url: https://github.com/sympatheticmoose/podinfo-backend
         git:
           branch: main
+        path: ./
     - name: frontend
       type: kustomize
       properties:
@@ -18,3 +19,4 @@ spec:
         url: https://github.com/sympatheticmoose/podinfo-frontend
         git:
           branch: main
+        path: ./
