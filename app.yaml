@@ -1,0 +1,20 @@
+apiVersion: core.oam.dev/v1beta1
+kind: Application
+metadata:
+  name: podinfo-app
+spec:
+  components:
+    - name: backend
+      type: kustomize
+      properties:
+        repoType: git
+        url: https://github.com/sympatheticmoose/podinfo-backend
+        git:
+          branch: main
+    - name: frontend
+      type: kustomize
+      properties:
+        repoType: git
+        url: https://github.com/sympatheticmoose/podinfo-frontend
+        git:
+          branch: main
